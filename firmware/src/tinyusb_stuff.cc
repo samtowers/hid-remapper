@@ -214,7 +214,6 @@ void tud_hid_set_protocol_cb(uint8_t instance, uint8_t protocol) {
 }
 
 void tud_mount_cb() {
-    reset_resolution_multiplier();
     if (boot_protocol_keyboard) {
         boot_protocol_keyboard = false;
         boot_protocol_updated = true;
