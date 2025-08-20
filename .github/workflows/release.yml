@@ -2,6 +2,7 @@ name: release
 on:
   push:
     tags: 'r*'
+  workflow_dispatch:
 jobs:
   build-nrf52:
     uses: ./.github/workflows/build-nrf52.yml
